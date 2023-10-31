@@ -1,0 +1,17 @@
+/*styling the profile icon*/
+
+/*
+colors:
+robin egg blue: #52D1DC
+chinese violet: #7B5E7B
+dark purple: #1C0221
+french gray: #BBBBBF
+*/
+.profileButton {
+    width: 100%;
+    border-radius: %;
+    border-style: dotted;
+    background-color: #52D1DC;
+    font-size: large;
+}
+

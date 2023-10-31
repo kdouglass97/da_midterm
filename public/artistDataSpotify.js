@@ -5,7 +5,7 @@ import {
 export async function getArtist(artistId) {
     const myToken = await getToken();
     const artistData = await getArtistHelper(myToken,artistId);
-    return { name: artistData.name, popularity: artistData.popularity };
+    return artistData;
 }
 
 async function getArtistHelper(access_token,artistId){

@@ -10,8 +10,9 @@ import {
     getPokemon
 } from './getPokemon.js'
 
-let artistBank = []
+//pull artist info from spotiy and puts into artist bank
 async function artistWrapper() {
+    let artistBank = []
     for (const artistname in artistIds) {
         if (artistIds.hasOwnProperty(artistname)) {
            let artistInfo = await getArtist(artistIds[artistname]); 
@@ -20,17 +21,31 @@ async function artistWrapper() {
             //console.log(associationBank);
         }
     }
+    return artistBank;
 }
 
+//adds pokemon info and helps above function
 function associationBank(artistInfo,pokemonInfo) {
+    let imageIndex = artistInfo.images.length-1
     return {name: artistInfo.name, 
         popularity: artistInfo.popularity, 
+        imageLinks: artistInfo.images[imageIndex].url,
         pokemon: pokemonInfo.name, 
 }
 };
 
-artistWrapper();
-console.log(artistBank);
+/*
+export function getArtistBank() {
+    return artistBank;
+}*/
 
+//
+async function populateData() {
+    let artistBank = await artistWrapper();
+    const testDiv = document.getElementById('artistBox')
+    console.log(artistBank)
+};
+
+populateData()
 
 // console.log(`${artistname}: ${artistIds[artistname]}`); 

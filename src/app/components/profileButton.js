@@ -9,9 +9,9 @@ export default function Profile(props) {
   return (    
     //profile stores both image + name
     <div className="profile">
-      <img id={artistImageID} src='/ultraball.png' onClick={() => router.push('/artistPokemonMatch')}></img>
-      <div id={artistNameID} className="profileButton"> 
-      loading artist...''
+      <img className='artistImage' id={artistImageID} src='/ultraball.png' onClick={() => router.push('/artistPokemonMatch')}></img>
+      <div className='artistName' id={artistNameID}> 
+      loading artist...
       </div>
     </div>
 

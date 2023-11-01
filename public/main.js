@@ -35,7 +35,7 @@ function associationBank(artistInfo,pokemonInfo) {
 }
 };
 
-//
+//goes to page, grabs from profileButton  
 async function populateData() {
     let artistBank = await artistWrapper();
     console.log(artistBank)

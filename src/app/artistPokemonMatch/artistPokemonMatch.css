@@ -1,0 +1,14 @@
+#pfp-artistName{
+    font-weight: bold;
+}
+#pfp-popularity{
+    font-weight: lighter;
+    font-size: large;
+}
+#pfp-pokemonName{
+    font: large;
+}
+#pfp-pokemonImage{
+    display: flex;
+    align-items: center;
+}

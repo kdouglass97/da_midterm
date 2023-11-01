@@ -7,10 +7,18 @@ chinese violet: #7B5E7B
 dark purple: #1C0221
 french gray: #BBBBBF
 */
+.profile{
+    display: flex;
+}
 .profileButton {
+
     width: 100%;
-    border-radius: %;
+
     border-style: dotted;
+    border-radius: 10%;
+
+    color: black;
+
     background-color: #52D1DC;
     font-size: large;
 }

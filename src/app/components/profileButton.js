@@ -4,12 +4,14 @@ import { useRouter } from 'next/navigation'
 
 export default function Profile(props) {
   const router = useRouter();
+  const artistNameID = 'ArtistName-' + props.artistNumber
+  const artistImageID = 'ArtistImage-' + props.artistNumber
   return (    
+    //profile stores both image + name
     <div className="profile">
-      <img src='https://i.scdn.co/image/ab6761610000f178b99cacf8acd5378206767261' onClick={() => router.push('/artistPokemonMatch')}></img>
-      <div className="profileButton"> 
-       {props.title}
-
+      <img id={artistImageID} src='/ultraball.png' onClick={() => router.push('/artistPokemonMatch')}></img>
+      <div id={artistNameID} className="profileButton"> 
+      loading artist...''
       </div>
     </div>
 

@@ -4,7 +4,6 @@ import { populateCatalogueData } from '../../../public/artistCatalogue';
 
 export default function ArtistMenu() {
   populateCatalogueData();
-  console.log('stringy cheese')
   return (
    
     <div id = "buttonContainer"> 

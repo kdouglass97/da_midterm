@@ -32,7 +32,18 @@ french gray: #BBBBBF
     border-color: pink;
     border-radius: 5%;
 }
-
+#pfp-genre{
+    font-weight: lighter;
+    font-size: 160%;
+    margin-left: 1vw;
+    margin-bottom: 2vw;
+}
+#pfp-spotifyUrl{
+    border-style: solid;
+    border-color: pink;
+    border-radius: 5%;
+    background-color: pink;
+}
 .pfp-centerScroll{
     background-color: black;
     border-style: dotted;

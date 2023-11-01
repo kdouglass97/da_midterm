@@ -5,6 +5,9 @@ export async function populateProfilePage(artistID) {
     let ARTIST_BANK = await artistWrapper();
     let currArtist = ARTIST_BANK[artistID]
 
+    console.log(currArtist.genres)
+    console.log(currArtist.urls)
+
     //updating image based on 'virality' (aka popularity)
     let popularity = currArtist.popularity + 1;
     let imageLink;
@@ -25,6 +28,15 @@ export async function populateProfilePage(artistID) {
 
     document.getElementById("pfp-popularity").innerText = 'virality ' + currArtist.popularity;
     
+    //genre
+    let genreArray = currArtist.genres;
+    let genreString = "";
+
+   genreArray.forEach(genre => {
+         genreString = genreString + genre + '\n';
+
+   });
+    document.getElementById("pfp-genre").innerText = genreString
 };
 
 /*

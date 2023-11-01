@@ -23,8 +23,17 @@ export default function ProfilePages(props) {
 
         <div id='pfp-artistName'></div>
         <div id='pfp-popularity'></div>
+        <div id='pfp-genre'></div>
 
       </div>
   
     )
 }
+
+/*
+<div id='pfp-spotifyUrl'>
+          <a href='https://www.youtube.com/watch?v=k8ozVkIkr-g&ab_channel=ShiroSagisu-Topic'>
+            <img src='/spotifyLogo.png'></img>
+          </a>
+        </div>
+*/

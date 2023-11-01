@@ -34,6 +34,8 @@ function associationBank(artistInfo,pokemonInfo) {
         popularity: artistInfo.popularity, 
         imageLink: artistInfo.images[imageIndex].url,
         pokemon: pokemonInfo.name, 
+        urls: artistInfo.external_urls,
+        genres: artistInfo.genres
 }
 };
 

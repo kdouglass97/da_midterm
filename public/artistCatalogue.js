@@ -10,5 +10,4 @@ export async function populateCatalogueData() {
         let artistImage = document.getElementById('ArtistImage-' + index)
         artistImage.src = ARTIST_BANK[index].imageLink
     }
-    console.log('a;sdlkfjas')
 };

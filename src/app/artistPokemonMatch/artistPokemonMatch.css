@@ -1,14 +1,47 @@
+/*
+colors:
+robin egg blue: #52D1DC
+chinese violet: #7B5E7B
+dark purple: #1C0221
+french gray: #BBBBBF
+*/
+
 #pfp-artistName{
     font-weight: bold;
+    font-size: 200%;
+    margin-left: 1vw;
+    margin-top: 1vw;
 }
 #pfp-popularity{
     font-weight: lighter;
-    font-size: large;
+    font-size: 200%;
+    margin-left: 1vw;
+    margin-bottom: 2vw;
 }
 #pfp-pokemonName{
+    margin-left: 1vw;
+    margin-top: 2.5vw;
+    margin-bottom: .5vw;
     font: large;
+    font-size: 300%;
+    font-weight: bold;
 }
 #pfp-pokemonImage{
-    display: flex;
+    background-color: #1C0221;
+    border-style: solid;
+    border-color: pink;
+    border-radius: 5%;
+}
+
+.pfp-centerScroll{
+    background-color: black;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 5%;
+
+    width: 80vw;
+    display: block;
+    padding-left: 20vw;
     align-items: center;
+    margin-left: 10%;
 }

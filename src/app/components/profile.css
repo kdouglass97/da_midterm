@@ -16,9 +16,10 @@ french gray: #BBBBBF
 }
 
 .artistImage{
+    border-style: solid;
+    border-color: #BBBBBF;
+
     border-radius: 10%;
-    border-color: white;
-    border-width: thick;
     margin: 3vh;
     margin-right: 1vh;
 }
@@ -27,21 +28,26 @@ french gray: #BBBBBF
 
     width: 100%;
 
-    border-width: 1vh;
     border-style: solid;
-    border-color: #52D1DC;
-    border-radius: 10%;
+    border-color: white;
+    border-radius: 7%;
 
     margin: 3vh;
 
-    color: black;
+    color: white;
 
-    background-color: #52D1DC;
+    background-color: #1C0221;
+    font-weight: bolder;
     font-size: 150%;
-    font-weight: bold;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.centerScroll{
+    width: 80vw;
+    display: block;
+    padding-left: 20vw;
+    align-items: center;
+}

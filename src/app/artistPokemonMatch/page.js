@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation'
 import { useSearchParams } from 'next/navigation';
 import { populateProfilePage } from '../../../public/profileMain';
-import styles from './artistPokemonMatch.css'
+import styles from './artistPokemonMatch.css';
 
 export default function ProfilePages(props) {
   const router = useRouter();
@@ -12,7 +12,7 @@ export default function ProfilePages(props) {
   populateProfilePage(artistID);
 
     return (    
-      <div className="ProfilePages">
+      <div className="pfp-centerScroll">
         <script type="module" src='./profileMain.js'></script>
 
         <div id='pfp-pokemonName'>

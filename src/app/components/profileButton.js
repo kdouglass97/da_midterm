@@ -13,19 +13,24 @@ export default function Profile(props) {
   const artistImageID = 'ArtistImage-' + artistNumber
   return (    
     //profile stores both image + name
-    <div className="profile">
+
+    <div className='centerScroll'>
+      <div className="profile">
       <img className='artistImage' id={artistImageID} src='/ultraball.png'></img>
 
+      <div className='artistName'>
       <Link href={{
         pathname: '/artistPokemonMatch',
         query: {
           artistID: artistNumber
         }
       }}>
-        <div className='artistName' id={artistNameID}> 
+        <div id={artistNameID}> 
           loading artist...
         </div>
       </Link>
+      </div>
+    </div>
     </div>
 
   )

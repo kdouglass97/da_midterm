@@ -15,7 +15,7 @@ export async function populateProfilePage(artistID) {
     } else {
       imageLink = 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/' + popularity + '.png';
     }
-    
+
     document.getElementById("pfp-pokemonImage").src = imageLink;
 
     //updating text elements based on other artist data
@@ -23,7 +23,7 @@ export async function populateProfilePage(artistID) {
 
     document.getElementById("pfp-artistName").innerText = currArtist.name;
 
-    document.getElementById("pfp-popularity").innerText = currArtist.popularity;
+    document.getElementById("pfp-popularity").innerText = 'virality ' + currArtist.popularity;
     
 };
 

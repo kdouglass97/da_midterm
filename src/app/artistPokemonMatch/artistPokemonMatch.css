@@ -32,6 +32,15 @@ french gray: #BBBBBF
     border-color: pink;
     border-radius: 5%;
 }
+
+#pfp-pokemonImage:hover{
+    background-color: #1C0221;
+    border-style: solid;
+    border-color: pink;
+    border-width: .4vh;
+    border-radius: 5%;
+}
+
 #pfp-genre{
     font-weight: lighter;
     font-size: 160%;

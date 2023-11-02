@@ -1,3 +1,4 @@
+//will work as long as under 9people unless you add more tags in home
 export const artistIds = {
     //100 million
     taylorSwift: '06HL4z0CvFAxyc27GXpf02',
@@ -14,6 +15,7 @@ export const artistIds = {
     joji: '3MZsBdqDrRTJihTHQrO6Dq',    
     laufey: '7gW0r5CkdEUMm42w9XpyZO',
     keshi: '3pc0bOVB5whxmD50W79wwO',
-    grimes: '053q0ukIDRgzwTr4vNSwab',
+    //grimes: '053q0ukIDRgzwTr4vNSwab',
+    faouzia: '5NhgsV7qPWHZqYEMKzbYvo'
 
 }
